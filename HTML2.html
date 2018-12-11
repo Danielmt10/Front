@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+
+<div class="container">
+	<br>
+
+  <svg width="800" height="600">
+
+
+
+  <rect cx="400" cy="300" rx="20" ry="20" width="650" height="470" style="fill:#252525;stroke:black;stroke-width:5;opacity:0.5" />
+
+  <!-- 1-2 -->
+  <line x1="60" y1="50" x2="130" y2="130" style="stroke:rgb(0,0,0);stroke-width:4" id="camino1a2" />
+  <!-- 2-3 -->
+  <line x1="130" y1="130" x2="240" y2="100" style="stroke:rgb(0,0,0);stroke-width:4" id="camino2a3" />
+  <!-- 3-7 -->
+  <line x1="240" y1="100" x2="330" y2="200" style="stroke:rgb(0,0,0);stroke-width:4" id="camino3a7" />
+  <!-- 4-5 -->
+  <line x1="380" y1="50" x2="550" y2="80" style="stroke:rgb(0,0,0);stroke-width:4" id="camino4a5" />
+  <!-- 7-4 -->
+  <line x1="330" y1="200" x2="380" y2="50" style="stroke:rgb(0,0,0);stroke-width:4" id="camino7a4" />
+  <!-- 5-6 -->
+  <line x1="550" y1="80" x2="600" y2="230" style="stroke:rgb(0,0,0);stroke-width:4" id="camino5a6" />
+  <!-- 10-9 -->
+  <line x1="60" y1="200" x2="240" y2="320" style="stroke:rgb(0,0,0);stroke-width:4" id="camino10a9" />
+  <!-- 2-11 -->
+  <line x1="130" y1="130" x2="130" y2="320" style="stroke:rgb(0,0,0);stroke-width:4" id="camino2a11" />
+  <!-- 11-7 -->
+  <line x1="130" y1="320" x2="330" y2="200" style="stroke:rgb(0,0,0);stroke-width:4" id="camino11a7" />
+  <!-- 7-8 -->
+  <line x1="330" y1="200" x2="500" y2="320" style="stroke:rgb(0,0,0);stroke-width:4" id="camino7a8" />
+  <!-- 8-9 -->
+  <line x1="500" y1="320" x2="240" y2="320" style="stroke:rgb(0,0,0);stroke-width:4" id="camino8a9" />
+  <!-- 11-12 -->
+  <line x1="130" y1="320" x2="60" y2="420" style="stroke:rgb(0,0,0);stroke-width:4" id="camino11a12" />
+  <!-- 12-13 -->
+  <line x1="60" y1="420" x2="240" y2="420" style="stroke:rgb(0,0,0);stroke-width:4" id="camino12a13" />
+  <!-- 13-14 -->
+  <line x1="240" y1="420" x2="380" y2="400" style="stroke:rgb(0,0,0);stroke-width:4" id="camino13a14" />
+  <!-- 9-14 -->
+  <line x1="240" y1="320" x2="380" y2="400" style="stroke:rgb(0,0,0);stroke-width:4" id="camino9a14" />
+  <!-- 15-14 -->
+  <line x1="550" y1="420" x2="380" y2="400" style="stroke:rgb(0,0,0);stroke-width:4" id="camino15a14" />
+
+  <!-- NODOS -->
+
+  <circle cx="60" cy="50" r="13" fill="white" stroke="black" stroke-width="2" id="nodo1"/>
+  <text aling="center" x="57" y="52" fill="black">1</text>
+
+  <circle cx="130" cy="130" r="13" fill="white" stroke="black" stroke-width="2" id="nodo2"/>
+  <text aling="center" x="127" y="132" fill="black">2</text>
+
+  <circle cx="240" cy="100" r="13" fill="white" stroke="black" stroke-width="2" id="nodo3"/>
+  <text aling="center" x="237" y="102" fill="black">3</text>
+
+  <circle cx="380" cy="50" r="13" fill="white" stroke="black" stroke-width="2" id="nodo4"/>
+  <text aling="center" x="377" y="52" fill="black">4</text>
+
+  <circle cx="550" cy="80" r="13" fill="white" stroke="black" stroke-width="2" id="nodo5"/>
+  <text aling="center" x="547" y="82" fill="black">5</text>
+
+  <circle cx="600" cy="230" r="13" fill="white" stroke="black" stroke-width="2" id="nodo6"/>
+  <text aling="center" x="597" y="232" fill="black">6</text>
+
+  <circle cx="330" cy="200" r="13" fill="white" stroke="black" stroke-width="2" id="nodo7"/>
+  <text aling="center" x="327" y="202" fill="black">7</text>
+
+  <circle cx="500" cy="320" r="13" fill="white" stroke="black" stroke-width="2" id="nodo8"/>
+  <text aling="center" x="497" y="322" fill="black">8</text>
+
+  <circle cx="240" cy="320" r="13" fill="white" stroke="black" stroke-width="2" id="nodo9"/>
+  <text aling="center" x="237" y="322" fill="black">9</text>
+
+  <circle cx="60" cy="200" r="13" fill="white" stroke="black" stroke-width="2" id="nodo10"/>
+  <text aling="center" x="57" y="202" fill="black">10</text>
+
+  <circle cx="130" cy="320" r="13" fill="white" stroke="black" stroke-width="2" id="nodo11"/>
+  <text aling="center" x="127" y="322" fill="black">11</text>
+
+  <circle cx="60" cy="420" r="13" fill="white" stroke="black" stroke-width="2" id="nodo12"/>
+  <text aling="center" x="57" y="422" fill="black">12</text>
+
+  <circle cx="240" cy="420" r="13" fill="white" stroke="black" stroke-width="2" id="nodo13"/>
+  <text aling="center" x="237" y="422" fill="black">13</text>
+
+  <circle cx="380" cy="400" r="13" fill="white" stroke="black" stroke-width="2" id="nodo14"/>
+  <text aling="center" x="377" y="402" fill="black">14</text>
+
+  <circle cx="550" cy="420" r="13" fill="white" stroke="black" stroke-width="2" id="nodo15"/>
+  <text aling="center" x="547" y="422" fill="black">15</text>
+
+</svg>
+
+  <input type="Text" id="ruta">
+
+  <button onclick="graficar()">
+  	CLICK
+  </button>
+</div>
+</body>
+
+<script>
+
+	var todo = {
+		"mapa":["nodo1","nodo2","nodo3","nodo4","nodo5","nodo6","nodo7","nodo8","nodo9","nodo10","nodo11","nodo12","nodo13","nodo14","nodo15","camino1a2","camino2a3","camino3a7","camino7a4","camino4a5","camino5a6","camino11a12","camino12a13","camino13a14","camino9a14","camino2a11","camino10a9","camino11a7","camino13a14","camino15a14"]
+	} 
+
+	var rutas = { 
+		"rutaA": ["nodo1","camino1a2","nodo2","camino2a3","nodo3","camino3a7","nodo7","camino7a4","nodo4","camino4a5","nodo5","camino5a6","nodo6"], 
+		"rutaB": ["nodo1","camino1a2","nodo2","camino2a11","nodo11","camino11a12","nodo12","camino12a13","nodo13","camino13a14","nodo14","camino9a14","nodo9","camino10a9","nodo10"],  
+		"rutaC": ["nodo1","camino1a2","nodo2","camino2a3","nodo3","camino3a7","nodo7","camino11a7","nodo11","camino11a12","nodo12","camino12a13","nodo13","camino13a14","nodo14","camino15a14","nodo15"], 
+		"rutaD": ["nodo10","camino10a9","nodo9","camino8a9","nodo8","camino7a8","nodo7","camino11a7","nodo11"],
+		"rutaE": ["nodo6","camino5a6","nodo5","camino4a5","nodo4","camino7a4","nodo7","camino7a8","nodo8","camino8a9","nodo9","camino9a14","nodo14","camino15a14","nodo15"],
+		"rutaF": ["nodo2","camino2a3","nodo3","camino3a7","nodo7","camino7a8","nodo8","camino8a9","nodo9","camino9a14","nodo14","camino13a14","nodo13","camino12a13","nodo12","camino11a12","nodo11","camino2a11","nodo2"]
+	};
+
+	function graficar() {
+
+		borrar();
+		var ruta = document.getElementById("ruta").value;		
+		nodos = traerRuta(ruta);
+		iterar(nodos);
+
+	}
+
+
+	function iterar (nodos){
+		for (i = 0; i < nodos.length; i++) {
+			document.getElementById(nodos[i]).style.stroke = "red";
+		} 
+	}
+
+	function borrar (){
+		var tod = todo.mapa
+		for (i = 0; i < tod.length; i++) {
+			document.getElementById(tod[i]).style.stroke = "black";
+		} 
+	}
+
+	function traerRuta(ruta){
+
+		var json = rutas;
+
+		if(ruta == "a"){
+			return json.rutaA;
+		}
+		if(ruta == "b"){
+			return json.rutaB;
+		}
+		if(ruta == "c"){
+			return json.rutaC;
+		}
+		if(ruta == "d"){
+			return json.rutaD;
+		}
+		if(ruta == "e"){
+			return json.rutaE;
+		}
+		if(ruta == "f"){
+			return json.rutaF;
+		}
+		alert('Ruta no encontrada');
+	}
+
+
+</script>
+
+<script src="https://unpkg.com/vue">
+	(function(){
+		new Vue({
+  		el: '#app',
+  	data () {
+    	return {
+      	info: null
+    }
+  },
+  mounted () {
+    axios
+      .get('http://localhost:8080/rutas')
+      .then(response => (this.info = response))
+      		alert('No pasó nada');
+ 		 }
+	})
+	}
+
+</script>
+
+</html>
